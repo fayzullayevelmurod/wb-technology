@@ -31,22 +31,277 @@
             <a href="#!" class="block text-orange text-[15px] leading-[18.29px] font-semibold">Перезвонить мне</a>
           </div>
           <div
-            class="relative ml-[84px] mr-[29px] border border-[#FFFFFF1A] flex items-center justify-center flex-col w-[76px] h-[50px] cursor-pointer">
+            class="relative ml-[84px] mr-[29px] open-select border border-[#FFFFFF1A] flex items-center justify-center flex-col w-[76px] h-[50px] cursor-pointer">
             <div class="flex items-center gap-[10px]">
-              <p class="text-white font-medium">RU</p>
+              <p class="text-white font-medium uppercase selected-language">RU</p>
               <img src="images/icons/arrow-down.svg" alt="" width="11" height="6">
+            </div>
+            <div
+              class="select-language origin-top duration-300 select-box scale-y-0 absolute border border-[#FFFFFF1A] top-full left-[-1px] w-[76px] pl-3 pt-2 space-y-3">
+              <p class="option text-white font-medium uppercase">EN</p>
+              <p class="option text-white font-medium uppercase">Ru</p>
             </div>
           </div>
 
-          <div class="flex items-center gap-3 cursor-pointer">
+          <button class="flex items-center gap-3 cursor-pointer open-menu__btn">
             <img src="images/icons/hamburger-menu.svg" alt="hamburger-menu">
             <p class="uppercase leading-[19.5px] font-medium text-white ">menu</p>
-          </div>
+          </button>
         </div>
       </div>
     </header>
+
+    <div class="fixed top-0 left-0 w-full h-full z-50 min-h-screen menu origin-left scale-x-0 duration-300">
+      <div class="flex items-stretch">
+        <div
+          class="bg-white flex-1 flex flex-col justify-between pb-[94px] pt-[60px] pl-[60px] pr-[100px] w-[480px] min-h-screen h-full">
+          <div>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-black uppercase w-full inline-block leading-[19px] font-bold py-[14px] px-[10px] border-b border-[#E6E6E6]"
+                  href="#!">ГЛАВНАЯ</a>
+              </li>
+              <li>
+                <a class="text-black uppercase w-full inline-block leading-[19px] font-bold py-[14px] px-[10px] border-b border-[#E6E6E6]"
+                  href="#!">о компании</a>
+              </li>
+              <li>
+                <a class="text-black uppercase w-full inline-block leading-[19px] font-bold py-[14px] px-[10px] border-b border-[#E6E6E6]"
+                  href="#!">о компании</a>
+              </li>
+            </ul>
+            <div class="my-16 space-y-5">
+              <div>
+                <p class="text-[#585858] mb-[10px] text-[15px] leading-[18.29px] font-medium">Телефон:</p>
+                <a class="font-medium leading-[27px] text-[17px] text-black" href="#!">+7 (343) 243 58 69</a>
+              </div>
+              <div>
+                <p class="text-[#585858] mb-[10px] text-[15px] leading-[18.29px] font-medium">E-mal:</p>
+                <a class="font-medium leading-[27px] text-[17px] text-black" href="#!">info@rusblast.com</a>
+              </div>
+              <div>
+                <p class="text-[#585858] mb-[10px] text-[15px] leading-[18.29px] font-medium">Адрес:</p>
+                <a class="font-medium leading-[27px] text-[17px] text-black" href="#!">г. Екатеринбург, ул. Фронтовых
+                  <br>
+                  бригад 18Б, корпус 2</a>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <a href="#!">
+                <img src="images/icons/youtube.svg" alt="youtube">
+              </a>
+              <a href="#!">
+                <img src="images/icons/instagram.svg" alt="instagram">
+              </a>
+              <a href="#!">
+                <img src="images/icons/telegram.svg" alt="telegram">
+              </a>
+            </div>
+          </div>
+          <div>
+            <a class="flex items-center gap-5" href="#!">
+              <img src="images/logo2.svg" alt="logo" width="91" height="52">
+              <p class="text-sm leading-[17px] text-black whitespace-nowrap font-medium">ВИЛ БЛАСТ ТЕХНОЛОДЖИМЫ <br>
+                <span class="text-gray-200">РЕМОНТИРУЕМ
+                  ДРОБЕМЕТЫ</span>
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="px-10 pt-[54px] flex-1 bg-[#101010] rounded-before relative bg-nav-left-bg bg-no-repeat bg-contain bg-right">
+          <h3 class="text-white leading-[30px] text-lg font-bold mb-5">ДРОБЕМЕТНОЕ ОБОРУДОВАНИЕ</h3>
+          <ul class="w-[400px]">
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Лопасть</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Распределительная камера</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Импеллер</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Колесо для крепления лопастей</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Верхняя броня турбины</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Боковая броня турбины</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Торцевая броня турбины</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Фильтры для дробеметов</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Защита дробеметной камеры</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Ковш для элеватора</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Шторка для дробемета</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Элемент защиты рольганга</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Болты</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Шнек</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Защита шнека</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Регулировочный клапан</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Щетка дробемета</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Шнек дробемета с ситом для удаления крупного мусора</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="px-10 pt-[54px] bg-[#101010] flex-1 rounded-before relative bg-nav-bg bg-no-repeat bg-cover bg-right">
+          <h3 class="text-white leading-[30px] text-lg font-bold mb-5 uppercase">турбины</h3>
+          <ul class="w-[400px]">
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробеметная турбина "Юпитер"</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробеметная турбина "Юпитер" <br>
+                с приводом</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробеметная турбина "Сатурн"</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробеметная турбина "Сатурн" <br>
+                с привордом</a>
+            </li>
+            <h3 class="text-white leading-[30px] text-lg font-bold mb-5 uppercase pt-8">дробеметы</h3>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробемет с подвесным конвейером тупиковый</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробеметная установка для очистки листа и профиля</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробемет с подвесным конвейером проходной</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Проходной дробемет для круглого проката</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Проходной дробемет для очистки труб</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробеметная установка под <br> индивидуальные задачи клиента</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробемет для очистки прутка</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Универсальный дробемет 3в1 (подвеска/ <br> барабан/поворотный стол)</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Дробеметный барабан с резиновым подом</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Фильтрационная установка для дробеметов</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="pt-[54px] bg-[#101010] rounded-before relative flex-1 bg-nav-right-bg bg-no-repeat bg-contain bg-left px-10">
+          <button class="w-6 h-6 p-[5px] absolute top-[56] right-[47px] close-btn">
+            <img src="images/close.svg" alt="close" width="12" height="12">
+          </button>
+          <h3 class="text-white leading-[30px] text-lg font-bold mb-5 uppercase">услуги</h3>
+          <ul class="w-[400px]">
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Текущий ремонт и сервисное обслуживание дробеметов</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Капитальный ремонт и модернизация дробеметов</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Технический аудит дробеметного и дробеструйного оборудования</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Обшивка защитами рабочей камеры дробемета</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Система сбора и рекуперации дроби (элеватор, шнек) для дробемета</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Система сепарации (сепаратор) дробеметных и дробеструйных камер</a>
+            </li>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Обучение персонала эксплуатирующего и обслуживающего дробеметного оборудования</a>
+            </li>
+            <h3 class="text-white leading-[30px] mt-8 text-lg font-bold uppercase mb-5">дробь</h3>
+            <li>
+              <a class="text-[#969CA3] leading-[19.5px] font-medium py-2 pl-[23px] pr-[7px] relative hover:text-orange duration-300 menu-link"
+                href="#!">Высокоуглеродистая стальная дробь</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <main>
-      <section class="intro bg-intro-bg bg-no-repeat bg-cover pt-[209px] relative text-white h-full pb-[62px]">
+      <section
+        class="intro bg-intro-bg bg-no-repeat bg-cover pt-[209px] relative text-white min-h-screen h-full pb-[62px]">
         <div class="container">
           <div class="swiper mySwiper h-[688px]">
             <div class="swiper-wrapper">
@@ -191,7 +446,42 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination">
+            </div>
+            <div class="number space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="el">
+                  <p class="number-text">1</p>
+                  <div class="hover-box">
+                    <p>Для дробеметов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="el">
+                  <p class="number-text">2</p>
+                  <div class="hover-box">
+                    <p>Для дробеметов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="el">
+                  <p class="number-text">3</p>
+                  <div class="hover-box">
+                    <p>Для дробеметов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="el">
+                  <p class="number-text">3</p>
+                  <div class="hover-box">
+                    <p>Для дробеметов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -204,8 +494,3 @@
 </body>
 
 </html>
-<!-- <div>
-                    <div class="relative">
-                      <p class="font-extrabold text-white text-sm leading-[14px]">01</p>
-                    </div>
-                  </div> -->

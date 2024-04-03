@@ -8,20 +8,21 @@ body {
   font-size: 16px;
 }
 
-.container {
-  max-width: 1657px;
-  width: 100%;
-  margin: 0 auto;
+a {
+  @apply inline-block
 }
 
-:root {
+.container {
+  @apply max-w-[1657px] w-full mx-auto;
+}
+
+/* :root {
   --tw-gradient-stops: #0890eb, #0056eb;
 }
 
 .from-gradientStart {
   animation: fadeBtn 2s linear infinite forwards;
   transform-origin: center;
-  /* @apply bg-blue; */
   background: linear-gradient(to right, var(--tw-gradient-stops));
   z-index: -1;
 }
@@ -37,7 +38,7 @@ body {
     transform: scale(1.2);
     opacity: 0;
   }
-}
+} */
 
 /* swiper */
 .swiper-pagination .swiper-pagination-bullet {
@@ -53,6 +54,63 @@ body {
   opacity: 1;
 }
 
+.menu-link::before {
+  @apply absolute content-[''] top-1/2 left-[0] -translate-y-1/2 w-[3px] h-[3px] bg-orange
+}
+
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  @apply text-orange
+  @apply text-orange;
+}
+
+.salom {
+  background: #000 !important;
+}
+
+/* Pagination matnini ko'rsatish uchun ushbu stilni qo'shing */
+/* #pagination-text {
+  position: absolute;
+  right: 50px;
+  top: 40%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: top 0.3s ease;
+}
+.swiper-pagination-bullet:hover + .pagination-text {
+  top: calc(40% + 2%);
+} */
+.number {
+  position: absolute;
+  top: 41%;
+  right: 0;
+  width: 165px;
+  height: 129px;
+  padding: 5px 10px;
+}
+
+.number .number-text {
+  text-align: right;
+  font-size: 14px;
+  position: absolute;
+  right: 15px;
+  width: 30%;
+  z-index: 99;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.number .number-text:hover+.hover-box p {
+  transform: scaleX(1);
+}
+
+.number .hover-box p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  text-align: left;
+  color: #818181;
+  transform-origin: right;
+  transition: all .3s linear;
+  transform: scaleX(0);
 }
