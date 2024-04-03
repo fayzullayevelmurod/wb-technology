@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1657px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --tw-gradient-stops: #0890eb, #0056eb;
+}
+
+.from-gradientStart {
+  animation: fadeBtn 2s linear infinite forwards;
+  transform-origin: center;
+  /* @apply bg-blue; */
+  background: linear-gradient(to right, var(--tw-gradient-stops));
+  z-index: -1;
+}
+
+
+@keyframes fadeBtn {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* swiper */
+.swiper-pagination .swiper-pagination-bullet {
+  background: transparent;
+  width: fit-content;
+  height: fit-content;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0 !important;
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply text-orange
+}
