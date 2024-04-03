@@ -640,6 +640,14 @@ video {
   top: 100%;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -650,6 +658,10 @@ video {
 
 .z-\[1\] {
   z-index: 1;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .mx-auto {
@@ -751,6 +763,14 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -761,6 +781,11 @@ video {
 
 .origin-top {
   transform-origin: top;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-x-0 {
